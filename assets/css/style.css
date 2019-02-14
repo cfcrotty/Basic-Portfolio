@@ -79,6 +79,18 @@ footer {
     width: 400px;
     height: 300px;
 }
+.me {
+    transition: all 2s, transform .5s, box-shadow .5s;
+  }
+  .me:hover {
+    box-shadow: 6px 6px 20px rgba(0,0,0,.6);
+    transform: scale(1.02);
+  }
+  .me:focus {
+    width: 46%;
+    box-shadow: 12px 12px 25px rgba(0,0,0,.7);
+    transform: none;
+  }
 .center {
     text-align: center;
     vertical-align: bottom;
