@@ -1,0 +1,79 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Homework-Recommended</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <h1>Cara Crotty</h1>
+                <div class="menu"> Contact </div>
+                <div class="menu line"> Portfolio &nbsp;&nbsp;</div>
+                <div class="menu line"> About &nbsp;&nbsp;</div>
+            </div>
+            
+        </header>
+        <div id="container" class="container">
+            <section class="indexSection">
+                <article>
+                    <h2>Contact</h2>
+                    <p class="line-border"></p>
+                    <div class="divForm">
+                        <form action="">
+                            <p>Name</p>
+                            <input class="text" id="name" name="name" type="text" value="" placeholder="Name"/>
+                            <p>Email</p>
+                            <input class="text" id="email" name="email" type="text" value="" placeholder="Email"/>
+                            <p>Message</p>
+                            <textarea name="textarea" id="textarea" class="textarea"></textarea>
+                            <input type="button" value="Submit" class="submit" onclick="checkValues();">
+                        </form>
+                    </div>
+                </article>
+            </section>
+        </div>
+        <div id="container1" class="container">
+                <section class="indexSection">
+                    <article>
+                        <h2>Contact</h2>
+                        <p class="line-border"></p>
+                        <div class="divForm">
+                            <p>Your information has been submitted.</p>
+                            <p>Name: <div id="name1"></div></p>
+                            <p>Email: <div id="email1"></div></p>
+                            <p>Message: <div id="message1"></div></p>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        <footer><p class="center">Copyright&copy;</p></footer>
+    </body>
+    <script>
+        //Show hide some div and insert value
+        function showHide() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var textarea = document.getElementById("textarea").value;
+
+            document.getElementById("container").style.display='none';
+            document.getElementById("container1").style.display='inline-block';
+            document.getElementById("name1").innerHTML = name;
+            document.getElementById("email1").innerHTML = email;
+            document.getElementById("message1").innerHTML = textarea;
+        }
+
+        function checkValues() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var textarea = document.getElementById("textarea").value;
+
+            if (!name || !email || !textarea) {
+                alert("Please complete the form before submitting.");
+                return 0;
+            }
+            showHide();
+        }
+    </script>
+</html>
