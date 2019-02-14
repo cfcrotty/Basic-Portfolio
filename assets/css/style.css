@@ -50,13 +50,7 @@ footer {
     /*float: left;
     overflow: auto;*/
 }
-.indexSection1 {
-    background-color: #ffffff;
-    border: 1px solid #dddddd;
-    width: 960px;
-    height: 85%;
-    margin: 40px auto 60px;
-    /*float: left;*/
+.overflow {
     overflow: auto;
 }
 .menu {
@@ -73,7 +67,7 @@ footer {
     width: 100%;
     z-index: 1;
     position: relative;
-    /*overflow: auto;*/
+    overflow: auto;
 }
 .header {
     width: 960px;
@@ -191,7 +185,7 @@ footer {
     top: 0;
 }
 .image1 {
-    margin-top: 6%;
+    margin-top: 5%;
     width: 600px;
     z-index: 5;
     opacity: 1;
