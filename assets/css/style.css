@@ -19,6 +19,9 @@ h1 {
     width: 200px;
     font-size: 28px;
 }
+h1:hover {
+    background-color: #e6e600;
+}
 h2 {
     color: #4aaaa5;
     text-align: left;
@@ -41,11 +44,8 @@ footer {
     margin: auto;
     text-align: center;
 }
-a {
+a, a:visited {
     text-decoration: none;
-    color: #777777;
-}
-a:visited {
     color: #777777;
 }
 .indexSection {
@@ -65,6 +65,11 @@ a:visited {
     float: right;
     margin: 20px 5px;
 }
+/*
+.menu:hover {
+    background-color: #cccccc;
+}
+*/
 .container {
     min-width: 960px;
     display: inline-block;
