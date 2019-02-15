@@ -150,6 +150,7 @@ a, a:visited {
     background-color: #4aaaa5;
     color: #ffffff;
     font-size: 15px;
+    border-radius: 5px;
 }
 .submit:hover {
     background-color: #2f6a67;
@@ -220,9 +221,14 @@ a, a:visited {
     z-index: 10;
     background-color: lightgray;
 }
+.headerName, .headerName:visited {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color: #ffffff;
+}
 #aboutMe {
     display: inline-block;
     margin: 10px 30px;
+    text-align: left;
 }
 #container1 {
     display: none;
