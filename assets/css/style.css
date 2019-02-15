@@ -145,12 +145,10 @@ a, a:visited {
 }
 .submit {
     margin: 20px 0;
-    height: 30px;
-    width: 80px;
+    padding: 10px 20px;
     background-color: #4aaaa5;
     color: #ffffff;
     font-size: 15px;
-    border-radius: 5px;
 }
 .submit:hover {
     background-color: #2f6a67;
